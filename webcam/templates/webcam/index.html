@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aivis Test - Streaming Web Server</title>
+<style>
+    body {
+        font-family: 'Arial';
+        background: #00c853;
+        margin: 0;
+        padding: 0;
+    }
+    .title {
+        text-align: center;
+        font-weight: bold;
+        color: white;
+    }
+    .stream {
+        position: absolute;
+        width: 700px;
+        height: 550px;
+        border-radius: 10px;
+        margin: 20px auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
+</head>
+<body>
+<h1 class="title">Aivis Test - Streaming Web Server</h1>
+<img class="stream" src="{% url 'live-stream' %}" alt="Aivis Test" />
+</body>
+</html>
